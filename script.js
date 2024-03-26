@@ -19,12 +19,19 @@ Ses envies :
 /* Demander le prénom */
 
 const tamaName = prompt ("Quel est ton nom?");
-console.log(tamaName);
+//console.log(tamaName);
 
 /* Faire eclore mon oeuf pour passer au poussin */
 const character = document.querySelector(".js-character");
 
 /*character a plusieurs propriétés dt text content pour changer la variable, je remplace le contenu"
 */
-character.textContent="🐣 ";
-console.log(character);
+character.textContent="🐣";
+//console.log(character);
+
+
+/* Afficher mes vitals, j'ajoute classe js dans html */
+const vitals = docuement.querySelector(".js-vitals");
+console.log(vitals);
+vitals.classList.remove("hidden")
+// ici , je ne mets pas de . devant hidden car dans classlist , javascript sait deja que c'est une classe contrairement au queryselector
