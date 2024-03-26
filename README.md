@@ -1,0 +1,2 @@
+# Tamagotchi
+Revision Javascript bases
