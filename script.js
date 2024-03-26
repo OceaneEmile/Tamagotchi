@@ -20,3 +20,11 @@ Ses envies :
 
 const tamaName = prompt ("Quel est ton nom?");
 console.log(tamaName);
+
+/* Faire eclore mon oeuf pour passer au poussin */
+const character = document.querySelector(".js-character");
+
+/*character a plusieurs propriétés dt text content pour changer la variable, je remplace le contenu"
+*/
+character.textContent="🐣 ";
+console.log(character);
