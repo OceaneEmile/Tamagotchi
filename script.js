@@ -75,16 +75,19 @@ buttonCenter.addEventListener('click',()=>{
        // console.log("ok 5"); au bout de 5 clics , j'ai mon prompt qui s'affiche
        birth();
     }
+
+//console.log (buttonCenter);
+//2)Quand arrive à 5 clics, on fait naitre le Tama, pour c il me faut un compteur que j'initialise à 0
+
 });
 };
 
 // PHASE 2 : Evolution de mon tama
-//1) Generer le premier caca
-//2) Nettoyer son écran
-//3) Il devient grand
+//1) Attendre que le Tama ait une premiere envie
+// 2) Il deveitn grand
+setTimeout(()=>{
+    console.log("1 sec est passée");
+},1000)
 
 // Lance la fonction de début 
 start();
-
-//console.log (buttonCenter);
-//2)Quand arrive à 5 clics, on fait naitre le Tama, pour c il me faut un compteur que j'initialise à 0
