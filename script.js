@@ -17,7 +17,6 @@ Ses envies :
 */
 
 /* Demander le prénom */
-
 const tamaName = prompt ("Quel est ton nom?");
 //console.log(tamaName);
 
@@ -30,9 +29,15 @@ character.textContent="🐣";
 //console.log(character);
 
 
-/* Afficher mes vitals, j'ajoute classe js dans html */
+/* Afficher mes vitals,  je dois retirer hidden du html dom , j'ajoute classe js dans html */
 const vitals = document.querySelector(".js-vitals");
 //console.log(vitals);
 vitals.classList.remove("hidden");
 // ici , je ne mets pas de . devant hidden car dans classlist , javascript sait deja que c'est une classe contrairement au queryselector
 
+//Afficher le nom de mon Tama dans les vitals
+// Sélectionne l'élément HTML ayant la classe "js-tamaName" et le stocke dans la variable nameDisplay
+const nameDisplay = document.querySelector(".js-tamaName");
+// Modifie le texte contenu dans l'élément nameDisplay avec la valeur de la variable tamaName ligne 20
+// il faut decommenter console.log de TamanName ligne 20 pour voir le resultat du prompt
+nameDisplay.textContent = tamaName;
