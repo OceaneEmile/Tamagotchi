@@ -61,6 +61,9 @@ scoresDisplay.forEach((score) =>{
             data-direction="center"
           ></button> */
 const buttonCenter = document.querySelector('.js-button[data-direction="center"]')
+//console.log (buttonCenter); // ok bien recupéré
+buttonCenter.addEventListener('click',()=>{
+    console.log("click");
+})
 console.log (buttonCenter);
-
 //2)Quand arrive à 5 clics,
