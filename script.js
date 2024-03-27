@@ -31,7 +31,8 @@ character.textContent="🐣";
 
 
 /* Afficher mes vitals, j'ajoute classe js dans html */
-const vitals = docuement.querySelector(".js-vitals");
-console.log(vitals);
-vitals.classList.remove("hidden")
+const vitals = document.querySelector(".js-vitals");
+//console.log(vitals);
+vitals.classList.remove("hidden");
 // ici , je ne mets pas de . devant hidden car dans classlist , javascript sait deja que c'est une classe contrairement au queryselector
+
