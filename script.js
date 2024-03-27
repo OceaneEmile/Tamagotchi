@@ -39,5 +39,19 @@ vitals.classList.remove("hidden");
 // Sélectionne l'élément HTML ayant la classe "js-tamaName" et le stocke dans la variable nameDisplay
 const nameDisplay = document.querySelector(".js-tamaName");
 // Modifie le texte contenu dans l'élément nameDisplay avec la valeur de la variable tamaName ligne 20
-// il faut decommenter console.log de TamanName ligne 20 pour voir le resultat du prompt
+// il faut decommenter console.log de TamanName ligne 20 pour voir si bien le resultat du prompt
 nameDisplay.textContent = tamaName;
+
+
+//5. Mettre les scores des vitals à 5
+// je pourrai selectionner tous les scores chacun, mais je vais modifier les classes pour que js-score devient commun
+//const eatScoreDisplay = document.querySelector
+//const eatScoreDisplay = document.querySelector
+// et mnt je peux utiliser queryselectorAll pour selectionner tous les elements classe js score
+const scoresDisplay = document.querySelectorAll(".js-score");
+console.log(scoresDisplay);// ca m'affiche bien 0
+// la bocule itère chaque element 
+scoresDisplay.forEach((score) =>{
+//console.log(score);
+score.textContent = 5;
+});
