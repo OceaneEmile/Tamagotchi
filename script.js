@@ -49,6 +49,9 @@ scoresDisplay.forEach((score) =>{
 //console.log(score);
     score.textContent = 5;
 });
+//6. Afficher les actions
+const actions = document.querySelector(".js-actions");
+actions.classList.remove("hidden");
 };
 
 //PHASE 0 ACTIVATION TAMAGOTCHI
@@ -74,6 +77,11 @@ buttonCenter.addEventListener('click',()=>{
     }
 });
 };
+
+// PHASE 2 : Evolution de mon tama
+//1) Generer le premier caca
+//2) Nettoyer son écran
+//3) Il devient grand
 
 // Lance la fonction de début 
 start();
