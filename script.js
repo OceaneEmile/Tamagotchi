@@ -15,11 +15,10 @@ Ses envies :
 - 🥱 : jouer, aléatoire minimum 30 sec et max 3 minutes
 - 💩 : caca, aléatoire minimum 30 sec et max 1.30 minutes uniquement après avoir mangé
 */
+/* PHASE 1 NAISSANCE TAMAGOTCHI*/
 
 // Creation d'une fonction
 const startTama = () => {
-
-
 /* 1. Demander le prénom */
 const tamaName = prompt ("Quel est ton nom?");
 //console.log(tamaName);
@@ -53,3 +52,15 @@ scoresDisplay.forEach((score) =>{
 });
 };
 
+//PHASE 0 ACTIVATION TAMAGOTCHI
+//1)Cliquer sur bouton du milieu : on a data direction en classe, y en a 3
+// je selectionne element button qui possede à la fois la classe js button et ATTRIBUT data direction avec valeur center
+//  synthase entre [] pour attribut
+/**       <button
+            class="tamastudi__button js-button"
+            data-direction="center"
+          ></button> */
+const buttonCenter = document.querySelector('.js-button[data-direction="center"]')
+console.log (buttonCenter);
+
+//2)Quand arrive à 5 clics,
