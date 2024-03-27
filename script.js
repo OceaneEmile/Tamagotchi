@@ -62,8 +62,13 @@ scoresDisplay.forEach((score) =>{
           ></button> */
 const buttonCenter = document.querySelector('.js-button[data-direction="center"]')
 //console.log (buttonCenter); // ok bien recupéré
+// je mets le let en dehors de la fonction !
+let count =0;
 buttonCenter.addEventListener('click',()=>{
-    console.log("click");
+    //console.log("click");
+   
+    count++;
+    console.log("click",count);
 })
-console.log (buttonCenter);
-//2)Quand arrive à 5 clics,
+//console.log (buttonCenter);
+//2)Quand arrive à 5 clics, on fait naitre le Tama, pour c il me faut un compteur que j'initialise à 0
