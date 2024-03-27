@@ -16,9 +16,8 @@ Ses envies :
 - 💩 : caca, aléatoire minimum 30 sec et max 1.30 minutes uniquement après avoir mangé
 */
 /* PHASE 1 NAISSANCE TAMAGOTCHI*/
-
 // Creation d'une fonction
-const startTama = () => {
+const birth = () => {
 /* 1. Demander le prénom */
 const tamaName = prompt ("Quel est ton nom?");
 //console.log(tamaName);
@@ -53,6 +52,7 @@ scoresDisplay.forEach((score) =>{
 };
 
 //PHASE 0 ACTIVATION TAMAGOTCHI
+const start = () => {
 //1)Cliquer sur bouton du milieu : on a data direction en classe, y en a 3
 // je selectionne element button qui possede à la fois la classe js button et ATTRIBUT data direction avec valeur center
 //  synthase entre [] pour attribut
@@ -69,9 +69,14 @@ buttonCenter.addEventListener('click',()=>{
     count++;
     //console.log("click",count);
     if (count === 5){
-       // console.log("ok 5");
-       startTama();
+       // console.log("ok 5"); au bout de 5 clics , j'ai mon prompt qui s'affiche
+       birth();
     }
-})
+});
+};
+
+// Lance la fonction de début 
+start();
+
 //console.log (buttonCenter);
 //2)Quand arrive à 5 clics, on fait naitre le Tama, pour c il me faut un compteur que j'initialise à 0
